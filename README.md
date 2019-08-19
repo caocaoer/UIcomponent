@@ -135,7 +135,7 @@ webpack.config.prod.babel.js                // webpack生产环境打包umd格�
 
 ## API
 ### 拖动验证 (可兼容移动端)
-![](https://github.com/caocaoer/sliderValidate/raw/master/resources/images/sliderValidate.png)  
+![](https://github.com/caocaoer/UIcomponent/blob/master/resources/images/sliderValidate.png)  
  - @param {Object} style 可选, 样式设置, 可选值: css通用样式.
  - @param {Function} sliderFinish 滑动到终点的回调函数.
 
