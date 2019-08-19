@@ -1,0 +1,42 @@
+/**
+ * created by cy in 2019/08/19
+ */
+$blueColor: #4D7BF3;
+$bgColor: #F5F5F5;
+
+@mixin boxSize ($width, $height) {
+    width: $width;
+    height: $height;
+}
+@mixin fontStyle ($color, $fontSize) {
+    color: $color;
+    font-size: $fontSize;
+}
+
+.sliderValidate {
+    @include boxSize(100%, 50px);
+    text-align: center;
+    line-height: 46px;
+    background: $bgColor;
+    position: relative;
+    border-radius: 3px;
+    .coverd {
+        position: absolute;
+        @include boxSize(0, 100%);
+        background: lightgreen;
+    }
+    .slider {
+        @include boxSize(52px, 100%);
+        background: $blueColor;
+        position: absolute;
+        cursor: pointer;
+        z-index: 3;
+        line-height: 53px;
+    }
+    .text {
+        @include fontStyle(#212121, 18px);
+        @include boxSize(100%, 100%);
+        position: absolute;
+        left: 0;
+    }
+}
